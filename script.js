@@ -18,7 +18,7 @@ async function submitVote() {
   const voteData = { aadhaar: encrypted, candidate, email };
 
   try {
-    const res = await fetch("http://localhost:3000/api/vote", {
+    const res = await fetch("https://blockchain-voting-api.onrender.com/api/vote", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(voteData),
