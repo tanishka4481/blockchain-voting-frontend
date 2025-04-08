@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain Voting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Remote Blockchain Voting</h1>
+      <input type="text" id="aadhaar" placeholder="Enter Aadhaar (12-digit)" />
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email (optional)"
+      />
+      <select id="candidate">
+        <option value="">-- Select Candidate --</option>
+        <option value="Alice">Alice</option>
+        <option value="Bob">Bob</option>
+        <option value="Charlie">Charlie</option>
+      </select>
+      <button onclick="submitVote()">Vote Securely</button>
+      <p id="status"></p>
+    </div>
+
+    <script src="encrypt.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
